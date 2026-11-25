@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.musama000/yc-companies",
+  "title": "Y Combinator Companies",
+  "description": "Y Combinator companies by batch, industry, status and hiring, with team size and location.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/talcoe/yc-companies",
+  "repository": {
+    "url": "https://github.com/musama000/talcoe-mcp-servers",
+    "source": "github",
+    "subfolder": "servers/yc-companies"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=talcoe/yc-companies",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token, sent as 'Bearer <apify-api-token>'. Runs bill to that Apify account.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

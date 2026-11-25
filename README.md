@@ -1,12 +1,16 @@
 # Talcoe MCP servers
 
-Remote MCP servers that give AI agents US public data: government bids, council agendas and business registries. Each server is a set of [Talcoe actors on Apify](https://apify.com/talcoe) loaded into Apify's hosted MCP server, so there is nothing to install or run.
+Remote MCP servers that give AI agents public web data: government bids, council agendas, business registries, YouTube, job postings, startups and rentals. Each server is a set of [Talcoe actors on Apify](https://apify.com/talcoe) loaded into Apify's hosted MCP server, so there is nothing to install or run.
 
 | Server | Ask it | Tools inside |
 |---|---|---|
 | [US Government Bids](servers/us-government-bids) | "Find janitorial bids in Arizona due this month." | Open bids and RFPs, federal contract awards, SBIR and STTR awards |
 | [Public Meeting Agendas](servers/public-meeting-agendas) | "What contracts are on Denver's committee agendas this week?" | City council, county board and school board agenda items |
 | [US Business Entities](servers/us-business-entities) | "List plumbing LLCs formed in Colorado this month." | Business registry records from CO, NY, OR and CT |
+| [YouTube Data](servers/youtube-data) | "Pull the transcript of this video and summarize it." | Transcripts with timestamps, comments, every video on a channel |
+| [Job Postings](servers/job-postings) | "Find remote platform engineer roles paying at least $160k." | Greenhouse, Lever, Ashby, Workday, SmartRecruiters, USAJOBS, remote boards |
+| [Y Combinator Companies](servers/yc-companies) | "Which Winter 2025 companies in industrials are hiring?" | The YC company directory by batch, industry, status and hiring |
+| [Rental Listings](servers/rental-listings) | "Find pet friendly two bedroom apartments in Austin under $1,800." | Zumper rental listings with rent, beds, baths and pet policy |
 
 ## Connect
 
@@ -52,7 +56,7 @@ Clients that support MCP sign in (OAuth) can connect with the URL alone and log 
 
 ## Pricing
 
-Results cost 0.4 to 1.5 cents each, billed to your Apify account at the actor's Store price, and each run carries a small start charge. The server pages list every price. An agent without an Apify account can buy a prepaid token with USDC over x402, with Skyfire or with a US card at [agi.apify.com](https://agi.apify.com).
+Results cost 0.3 to 1.5 cents each, billed to your Apify account at the actor's Store price, and each run carries a small start charge. The server pages list every price. An agent without an Apify account can buy a prepaid token with USDC over x402, with Skyfire or with a US card at [agi.apify.com](https://agi.apify.com).
 
 ## Registry
 

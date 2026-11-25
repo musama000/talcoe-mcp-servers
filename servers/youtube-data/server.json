@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.musama000/youtube-data",
+  "title": "YouTube Data",
+  "description": "YouTube transcripts with timestamps, comments with replies, and every video on a channel.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/talcoe/youtube-transcripts",
+  "repository": {
+    "url": "https://github.com/musama000/talcoe-mcp-servers",
+    "source": "github",
+    "subfolder": "servers/youtube-data"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=talcoe/youtube-transcripts,talcoe/youtube-comments,talcoe/youtube-channel-videos",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token, sent as 'Bearer <apify-api-token>'. Runs bill to that Apify account.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
