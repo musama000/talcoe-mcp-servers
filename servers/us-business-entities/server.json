@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.musama000/us-business-entities",
+  "title": "US Business Entities",
+  "description": "Business registry records from Colorado, New York, Oregon and Connecticut in one schema.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/talcoe/us-business-entity-search",
+  "repository": {
+    "url": "https://github.com/musama000/talcoe-mcp-servers",
+    "source": "github",
+    "subfolder": "servers/us-business-entities"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=talcoe/us-business-entity-search",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token, sent as 'Bearer <apify-api-token>'. Runs bill to that Apify account.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

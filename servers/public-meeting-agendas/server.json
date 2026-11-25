@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.musama000/public-meeting-agendas",
+  "title": "Public Meeting Agendas",
+  "description": "City council, county board and school board agenda items from Legistar, BoardDocs and CivicClerk.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/talcoe/public-meeting-agendas",
+  "repository": {
+    "url": "https://github.com/musama000/talcoe-mcp-servers",
+    "source": "github",
+    "subfolder": "servers/public-meeting-agendas"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=talcoe/public-meeting-agendas,talcoe/boarddocs-agendas",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token, sent as 'Bearer <apify-api-token>'. Runs bill to that Apify account.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
