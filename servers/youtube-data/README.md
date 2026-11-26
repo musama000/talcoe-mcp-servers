@@ -29,7 +29,7 @@ Send your Apify API token as `Authorization: Bearer <token>`. Setup for Claude C
 
 | Tool | Returns | Price |
 |---|---|---|
-| `talcoe--youtube-transcripts` | The full transcript as text and timestamped segments, with title, channel, publish date, duration and views, by caption language with optional translation | $0.003 per video |
+| `talcoe--youtube-transcripts` | The full transcript as text and timestamped segments, with title, channel, publish date, duration and views, by caption language with optional translation | $0.005 per video |
 | `talcoe--youtube-comments` | One record per comment with text, likes, reply count and pinned or hearted flags, sorted top or newest, with optional replies | $0.003 per comment |
 | `talcoe--youtube-channel-videos` | Every public video on a channel with title, views, upload age, duration and thumbnail, filtered by sort order and minimum views | $0.003 per video |
 
