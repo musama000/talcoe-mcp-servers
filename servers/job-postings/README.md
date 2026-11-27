@@ -20,7 +20,7 @@ One of the rows that comes back:
 ## URL
 
 ```
-https://mcp.apify.com/?tools=talcoe/greenhouse-jobs,talcoe/lever-jobs,talcoe/ashby-jobs,talcoe/workday-jobs,talcoe/smartrecruiters-jobs,talcoe/usajobs,talcoe/remote-jobs-aggregator
+https://mcp.apify.com/?tools=talcoe/ats-careers-multi,talcoe/greenhouse-jobs,talcoe/lever-jobs,talcoe/ashby-jobs,talcoe/workday-jobs,talcoe/smartrecruiters-jobs,talcoe/usajobs,talcoe/remote-jobs-aggregator
 ```
 
 Send your Apify API token as `Authorization: Bearer <token>`. Setup for Claude Code, Cursor and VS Code is in the [main README](../../README.md#connect).
@@ -29,6 +29,7 @@ Send your Apify API token as `Authorization: Bearer <token>`. Setup for Claude C
 
 | Tool | Returns | Price |
 |---|---|---|
+| `talcoe--ats-careers-multi` | One feed across 10,716 Greenhouse, Lever, Ashby and Workday boards plus Workable and SmartRecruiters search. With `newSinceLastRun` on, each call returns only jobs it has not returned before | $0.005 per job |
 | `talcoe--greenhouse-jobs` | Open roles across 600 companies on Greenhouse, or your own company list, by keyword, location, department and posting date | $0.005 per job |
 | `talcoe--lever-jobs` | Open roles across companies on Lever by keyword, location, team, workplace type and commitment | $0.005 per job |
 | `talcoe--ashby-jobs` | Open roles across about 2,000 companies on Ashby, with pay range, by keyword, location, department, remote and minimum salary | $0.005 per job |
@@ -41,12 +42,14 @@ Apify's MCP server adds four helper tools that read run status and results. Each
 
 ## Prompts to try
 
+- "Give me the new remote data engineer jobs posted since yesterday across Greenhouse, Lever, Ashby and Workday."
 - "Find remote senior platform engineer roles on Ashby paying at least $160k."
 - "Which Greenhouse companies posted product designer jobs in New York this week?"
 - "List GS-13 cybersecurity jobs on USAJOBS that close this month."
 
 ## Source actors
 
+- [Career Site Jobs Feed API: Workday, Greenhouse, Lever, Ashby](https://apify.com/talcoe/ats-careers-multi)
 - [Greenhouse Jobs Scraper](https://apify.com/talcoe/greenhouse-jobs)
 - [Lever Jobs Scraper](https://apify.com/talcoe/lever-jobs)
 - [Ashby Jobs Scraper](https://apify.com/talcoe/ashby-jobs)

@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.musama000/job-postings",
   "title": "Job Postings",
-  "description": "Open jobs from Greenhouse, Lever, Ashby, Workday, SmartRecruiters, USAJOBS and remote job boards.",
-  "version": "1.0.0",
+  "description": "One feed of new jobs from 10,716 career boards, plus Greenhouse, Lever, Ashby, Workday and USAJOBS.",
+  "version": "1.1.0",
   "websiteUrl": "https://apify.com/talcoe",
   "repository": {
     "url": "https://github.com/musama000/talcoe-mcp-servers",
@@ -13,7 +13,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com/?tools=talcoe/greenhouse-jobs,talcoe/lever-jobs,talcoe/ashby-jobs,talcoe/workday-jobs,talcoe/smartrecruiters-jobs,talcoe/usajobs,talcoe/remote-jobs-aggregator",
+      "url": "https://mcp.apify.com/?tools=talcoe/ats-careers-multi,talcoe/greenhouse-jobs,talcoe/lever-jobs,talcoe/ashby-jobs,talcoe/workday-jobs,talcoe/smartrecruiters-jobs,talcoe/usajobs,talcoe/remote-jobs-aggregator",
       "headers": [
         {
           "name": "Authorization",
