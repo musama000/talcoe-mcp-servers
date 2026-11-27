@@ -7,7 +7,7 @@ Remote MCP servers that give AI agents public web data: government bids, council
 | [US Government Bids](servers/us-government-bids) | "Find janitorial bids in Arizona due this month." | Open bids and RFPs, federal contract awards, SBIR and STTR awards |
 | [Public Meeting Agendas](servers/public-meeting-agendas) | "What contracts are on Denver's committee agendas this week?" | City council, county board and school board agenda items |
 | [US Business Entities](servers/us-business-entities) | "List plumbing LLCs formed in Colorado this month." | Business registry records from CO, NY, OR and CT |
-| [YouTube Data](servers/youtube-data) | "Pull the transcript of this video and summarize it." | Transcripts with timestamps, comments, every video on a channel |
+| [YouTube Data](servers/youtube-data) | "Pull the transcript of this video and summarize it." | Search, video details, transcripts with timestamps, comments, every video on a channel |
 | [Job Postings](servers/job-postings) | "Find remote platform engineer roles paying at least $160k." | One feed across 10,716 career boards, plus Greenhouse, Lever, Ashby, Workday, SmartRecruiters, USAJOBS, remote boards |
 | [Y Combinator Companies](servers/yc-companies) | "Which Winter 2025 companies in industrials are hiring?" | The YC company directory by batch, industry, status and hiring |
 | [Rental Listings](servers/rental-listings) | "Find pet friendly two bedroom apartments in Austin under $1,800." | Zumper rental listings with rent, beds, baths and pet policy |

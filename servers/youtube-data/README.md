@@ -20,7 +20,7 @@ The row that comes back, with the transcript cut short here:
 ## URL
 
 ```
-https://mcp.apify.com/?tools=talcoe/youtube-transcripts,talcoe/youtube-comments,talcoe/youtube-channel-videos
+https://mcp.apify.com/?tools=talcoe/youtube-transcripts,talcoe/youtube-comments,talcoe/youtube-channel-videos,talcoe/youtube-search-videos,talcoe/youtube-video-details
 ```
 
 Send your Apify API token as `Authorization: Bearer <token>`. Setup for Claude Code, Cursor and VS Code is in the [main README](../../README.md#connect).
@@ -32,6 +32,8 @@ Send your Apify API token as `Authorization: Bearer <token>`. Setup for Claude C
 | `talcoe--youtube-transcripts` | Transcripts for single videos, whole channels or playlists, as plain text, timestamped segments, SRT or VTT, with title, channel, publish date, duration and views. Pick a caption language or ask for a translation. A video with no captions is not charged. | $0.005 per transcript, less on higher Apify plans |
 | `talcoe--youtube-comments` | One record per comment with text, likes, reply count and pinned or hearted flags, sorted top or newest, with optional replies | $0.003 per comment |
 | `talcoe--youtube-channel-videos` | Every public video on a channel with title, views, upload age, duration and thumbnail, filtered by sort order and minimum views | $0.003 per video |
+| `talcoe--youtube-search-videos` | YouTube search results for one or more keywords with video id, title, channel, views, publish date, duration and thumbnail, filtered by sort order, upload date and length | $0.003 per video |
+| `talcoe--youtube-video-details` | Details for any list of video links or ids: title, channel, views, likes, publish date, duration, tags, category, chapters and comment count | $0.003 per video |
 
 Apify's MCP server adds four helper tools that read run status and results. Each run also carries a small start charge.
 
@@ -43,9 +45,13 @@ Apify's MCP server adds four helper tools that read run status and results. Each
 - "Pull the transcript of this video and give me the timestamps for each topic."
 - "What do the top 100 comments on this video say about battery life?"
 - "List every video on this channel with more than 100,000 views, newest first."
+- "Search YouTube for home espresso machine reviews uploaded this month and rank them by views."
+- "Get the likes, tags and chapters of these three videos."
 
 ## Source actors
 
 - [YouTube Transcript API: Channels, Playlists, SRT, VTT](https://apify.com/talcoe/youtube-transcripts)
 - [YouTube Comments Scraper: Comments, Replies and Likes](https://apify.com/talcoe/youtube-comments)
 - [YouTube Channel Scraper: All Videos, Views and Duration](https://apify.com/talcoe/youtube-channel-videos)
+- [YouTube Video Search Scraper with Filters](https://apify.com/talcoe/youtube-search-videos)
+- [YouTube Video Details Scraper with Views, Likes and Chapters](https://apify.com/talcoe/youtube-video-details)
