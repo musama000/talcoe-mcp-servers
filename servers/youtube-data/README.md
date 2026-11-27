@@ -29,7 +29,7 @@ Send your Apify API token as `Authorization: Bearer <token>`. Setup for Claude C
 
 | Tool | Returns | Price |
 |---|---|---|
-| `talcoe--youtube-transcripts` | The full transcript as text and timestamped segments, with title, channel, publish date, duration and views, by caption language with optional translation | $0.005 per video |
+| `talcoe--youtube-transcripts` | Transcripts for single videos, whole channels or playlists, as plain text, timestamped segments, SRT or VTT, with title, channel, publish date, duration and views. Pick a caption language or ask for a translation. A video with no captions is not charged. | $0.005 per transcript, less on higher Apify plans |
 | `talcoe--youtube-comments` | One record per comment with text, likes, reply count and pinned or hearted flags, sorted top or newest, with optional replies | $0.003 per comment |
 | `talcoe--youtube-channel-videos` | Every public video on a channel with title, views, upload age, duration and thumbnail, filtered by sort order and minimum views | $0.003 per video |
 
@@ -37,12 +37,15 @@ Apify's MCP server adds four helper tools that read run status and results. Each
 
 ## Prompts to try
 
+- "Get the transcripts of the 10 newest videos on @Fireship and list the products each one mentions."
+- "Pull the transcripts of every video in this playlist as SRT files."
+- "Which of these five videos mention pricing, and at what timestamp?"
 - "Pull the transcript of this video and give me the timestamps for each topic."
 - "What do the top 100 comments on this video say about battery life?"
 - "List every video on this channel with more than 100,000 views, newest first."
 
 ## Source actors
 
-- [YouTube Transcript Scraper with Timestamps and Languages](https://apify.com/talcoe/youtube-transcripts)
+- [YouTube Transcript API: Channels, Playlists, SRT, VTT](https://apify.com/talcoe/youtube-transcripts)
 - [YouTube Comments Scraper: Comments, Replies and Likes](https://apify.com/talcoe/youtube-comments)
 - [YouTube Channel Scraper: All Videos, Views and Duration](https://apify.com/talcoe/youtube-channel-videos)
